@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     stages {
-        stage('build now') { 
+        stage('build') { 
             steps {
 	        sh 'mvn install'
 		sh 'sudo cp -r /root/.m2/repository/com/mycompany/app/my-app/1/my-app-1.jar /root/'
